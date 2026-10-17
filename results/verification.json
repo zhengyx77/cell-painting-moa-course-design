@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": [
+    "192 profiles / 64 drugs",
+    "disjoint train/test groups",
+    "model training groups match",
+    "only morphology inputs",
+    "48 saved probabilities reproduced",
+    "dose metrics recomputed",
+    "16 drug probability averages reproduced",
+    "12 example predictions reproduced",
+    "invalid CSV rejected"
+  ]
+}

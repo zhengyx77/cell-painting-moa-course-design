@@ -1,0 +1,201 @@
+{
+  "selected_model": "RF_leaf1",
+  "test_compound_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "balanced_accuracy": 1.0
+  },
+  "test_dose_metrics": {
+    "accuracy": 0.9375,
+    "macro_f1": 0.9355156920374312,
+    "balanced_accuracy": 0.9277777777777777
+  },
+  "test_baseline_metrics": {
+    "accuracy": 0.25,
+    "macro_f1": 0.08,
+    "balanced_accuracy": 0.2
+  },
+  "test_ci_95": {
+    "accuracy": [
+      1.0,
+      1.0
+    ],
+    "macro_f1": [
+      1.0,
+      1.0
+    ],
+    "balanced_accuracy": [
+      1.0,
+      1.0
+    ]
+  },
+  "permutation": {
+    "model": "LR_C1",
+    "observed_cv_macro_f1": 0.7811111111111111,
+    "null_mean": 0.17778439153439152,
+    "null_max": 0.3177380952380952,
+    "n_permutations": 30,
+    "p_value": 0.03225806451612903
+  },
+  "pca_variance_ratio": [
+    0.3742791587659772,
+    0.2701398940916953
+  ],
+  "data": {
+    "source_rows": 10752,
+    "source_columns": 1790,
+    "selected_rows": 192,
+    "compound_ids": 64,
+    "independent_groups": 64,
+    "train_groups": 48,
+    "test_groups": 16,
+    "features_before_blocklist": 1781,
+    "features_after_blocklist": 1694,
+    "blocked_features": [
+      "Cells_Correlation_K_DNA_Mito",
+      "Cells_Correlation_Manders_AGP_RNA",
+      "Cells_Correlation_Manders_Mito_ER",
+      "Cells_Correlation_Manders_RNA_ER",
+      "Cells_Granularity_15_AGP",
+      "Cells_Granularity_15_Mito",
+      "Cells_Granularity_16_AGP",
+      "Cells_Granularity_16_ER",
+      "Cells_Granularity_16_Mito",
+      "Cells_Granularity_16_RNA",
+      "Cells_Granularity_4_AGP",
+      "Cells_Granularity_5_ER",
+      "Cells_Neighbors_FirstClosestDistance_Adjacent",
+      "Cytoplasm_AreaShape_Compactness",
+      "Cytoplasm_Correlation_Costes_DNA_AGP",
+      "Cytoplasm_Correlation_Costes_DNA_ER",
+      "Cytoplasm_Correlation_K_AGP_Mito",
+      "Cytoplasm_Correlation_Manders_DNA_ER",
+      "Cytoplasm_Correlation_Manders_Mito_ER",
+      "Cytoplasm_Correlation_Manders_RNA_ER",
+      "Cytoplasm_Correlation_RWC_AGP_Mito",
+      "Cytoplasm_Granularity_6_AGP",
+      "Cytoplasm_Granularity_6_Mito",
+      "Cytoplasm_Granularity_7_AGP",
+      "Cytoplasm_Granularity_8_Mito",
+      "Nuclei_AreaShape_MedianRadius",
+      "Nuclei_Correlation_Costes_DNA_Mito",
+      "Nuclei_Correlation_Manders_AGP_DNA",
+      "Nuclei_Correlation_Manders_AGP_ER",
+      "Nuclei_Correlation_Manders_AGP_Mito",
+      "Nuclei_Correlation_Manders_AGP_RNA",
+      "Nuclei_Correlation_Manders_DNA_AGP",
+      "Nuclei_Correlation_Manders_DNA_ER",
+      "Nuclei_Correlation_Manders_DNA_Mito",
+      "Nuclei_Correlation_Manders_DNA_RNA",
+      "Nuclei_Correlation_Manders_ER_AGP",
+      "Nuclei_Correlation_Manders_ER_DNA",
+      "Nuclei_Correlation_Manders_ER_Mito",
+      "Nuclei_Correlation_Manders_ER_RNA",
+      "Nuclei_Correlation_Manders_Mito_AGP",
+      "Nuclei_Correlation_Manders_Mito_DNA",
+      "Nuclei_Correlation_Manders_Mito_ER",
+      "Nuclei_Correlation_Manders_Mito_RNA",
+      "Nuclei_Correlation_Manders_RNA_AGP",
+      "Nuclei_Correlation_Manders_RNA_DNA",
+      "Nuclei_Correlation_Manders_RNA_ER",
+      "Nuclei_Correlation_Manders_RNA_Mito",
+      "Nuclei_Correlation_RWC_AGP_DNA",
+      "Nuclei_Correlation_RWC_AGP_ER",
+      "Nuclei_Correlation_RWC_AGP_Mito",
+      "Nuclei_Correlation_RWC_AGP_RNA",
+      "Nuclei_Correlation_RWC_DNA_AGP",
+      "Nuclei_Correlation_RWC_DNA_ER",
+      "Nuclei_Correlation_RWC_DNA_Mito",
+      "Nuclei_Correlation_RWC_DNA_RNA",
+      "Nuclei_Correlation_RWC_ER_AGP",
+      "Nuclei_Correlation_RWC_ER_DNA",
+      "Nuclei_Correlation_RWC_ER_Mito",
+      "Nuclei_Correlation_RWC_ER_RNA",
+      "Nuclei_Correlation_RWC_Mito_AGP",
+      "Nuclei_Correlation_RWC_Mito_DNA",
+      "Nuclei_Correlation_RWC_Mito_ER",
+      "Nuclei_Correlation_RWC_Mito_RNA",
+      "Nuclei_Correlation_RWC_RNA_AGP",
+      "Nuclei_Correlation_RWC_RNA_DNA",
+      "Nuclei_Correlation_RWC_RNA_ER",
+      "Nuclei_Correlation_RWC_RNA_Mito",
+      "Nuclei_Granularity_14_AGP",
+      "Nuclei_Granularity_14_DNA",
+      "Nuclei_Granularity_14_ER",
+      "Nuclei_Granularity_14_Mito",
+      "Nuclei_Granularity_14_RNA",
+      "Nuclei_Granularity_15_AGP",
+      "Nuclei_Granularity_15_DNA",
+      "Nuclei_Granularity_15_ER",
+      "Nuclei_Granularity_15_Mito",
+      "Nuclei_Granularity_15_RNA",
+      "Nuclei_Granularity_16_AGP",
+      "Nuclei_Granularity_16_DNA",
+      "Nuclei_Granularity_16_ER",
+      "Nuclei_Granularity_16_Mito",
+      "Nuclei_Granularity_16_RNA",
+      "Nuclei_Intensity_MassDisplacement_DNA",
+      "Nuclei_RadialDistribution_MeanFrac_ER_4of4",
+      "Nuclei_Texture_AngularSecondMoment_DNA_5_0",
+      "Nuclei_Texture_InfoMeas1_Mito_10_0",
+      "Nuclei_Texture_SumAverage_DNA_20_0"
+    ],
+    "missing_name_groups": 6,
+    "missing_structure_groups": 6,
+    "source_sha256": "183ce0c576c101ec0fd53b7231466ae090e702a5d9be8f0e2b1e1dfb955ea726",
+    "config_sha256": "31172782c20ab02b4581bc211aaf4e21b4258027fe8d69a4ec425587701ba175",
+    "split_overlap": 0,
+    "nonfinite_fraction": 0.0013282172373081465,
+    "class_counts": [
+      {
+        "moa": "EGFR inhibitor",
+        "test": 4,
+        "train": 11
+      },
+      {
+        "moa": "HDAC inhibitor",
+        "test": 3,
+        "train": 9
+      },
+      {
+        "moa": "MEK inhibitor",
+        "test": 3,
+        "train": 7
+      },
+      {
+        "moa": "topoisomerase inhibitor",
+        "test": 4,
+        "train": 13
+      },
+      {
+        "moa": "tubulin polymerization inhibitor",
+        "test": 2,
+        "train": 8
+      }
+    ]
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "sklearn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "runtime_seconds": 26.22,
+  "correct_test_compounds": 16,
+  "test_compounds": 16,
+  "interpretation_model": "LR_C1",
+  "selected_feature_count_lr": 100,
+  "test_accuracy_wilson_95": [
+    0.8063923194655637,
+    1.0
+  ],
+  "bootstrap_warning": "All compound predictions are correct, so the empirical bootstrap interval degenerates to [1,1]. It is not an uncertainty-free conclusion. Report Wilson accuracy interval and CV variability.",
+  "independence_checks": {
+    "exact_feature_row_overlap": 0,
+    "broad_id_overlap": 0,
+    "known_structure_overlap": 0,
+    "metadata_feature_columns": []
+  }
+}

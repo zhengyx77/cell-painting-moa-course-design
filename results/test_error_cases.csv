@@ -1,0 +1,4 @@
+﻿group,compound_id,compound_name,dose_code,true,EGFR inhibitor,HDAC inhibitor,MEK inhibitor,topoisomerase inhibitor,tubulin polymerization inhibitor,pred
+WVUNYSQLFKLYNI,BRD-K08799216,pelitinib,6,EGFR inhibitor,0.01,0.45,0.0066666666666666,0.3933333333333333,0.14,HDAC inhibitor
+OHRURASPPZQGQM,BRD-K61397605,romidepsin,4,HDAC inhibitor,0.0366666666666666,0.41,0.0033333333333333,0.44,0.11,topoisomerase inhibitor
+OPXLLQIJSORQAM,BRD-K77987382,mebendazole,4,tubulin polymerization inhibitor,0.0133333333333333,0.2266666666666666,0.0366666666666666,0.5433333333333333,0.18,topoisomerase inhibitor

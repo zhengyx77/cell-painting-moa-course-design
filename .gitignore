@@ -1,0 +1,12 @@
+.packages/
+.venv/
+build/
+__pycache__/
+*.pyc
+data/raw/
+models/
+*.log
+*.zip
+.DS_Store
+.chart-data-*/
+交付材料/

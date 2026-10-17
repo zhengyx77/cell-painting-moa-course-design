@@ -1,0 +1,5 @@
+{
+  "model": "RF_leaf1",
+  "criterion": "training grouped CV mean compound macro-F1",
+  "test_used_for_selection": false
+}

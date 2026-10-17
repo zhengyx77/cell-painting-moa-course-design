@@ -1,0 +1,26 @@
+[
+  {
+    "path": "data/raw/lincs_consensus_median_dmso.csv.gz",
+    "url": "https://media.githubusercontent.com/media/broadinstitute/lincs-cell-painting/061870127481dcd73c29df85ebcfddeac2ed0828/consensus/2016_04_01_a549_48hr_batch1/2016_04_01_a549_48hr_batch1_consensus_median_dmso.csv.gz",
+    "source_commit": "061870127481dcd73c29df85ebcfddeac2ed0828",
+    "bytes": 58833815,
+    "sha256": "183ce0c576c101ec0fd53b7231466ae090e702a5d9be8f0e2b1e1dfb955ea726",
+    "license": "CC0-1.0 for source data"
+  },
+  {
+    "path": "data/raw/repurposing_info.tsv",
+    "url": "https://raw.githubusercontent.com/broadinstitute/lincs-cell-painting/061870127481dcd73c29df85ebcfddeac2ed0828/metadata/moa/repurposing_info.tsv",
+    "source_commit": "061870127481dcd73c29df85ebcfddeac2ed0828",
+    "bytes": 3639858,
+    "sha256": "aa8d8f4e2a175ed3c6c0c97e18699f62eda7caf9fed445590f364d278e01dd2d",
+    "license": "CC0-1.0 for source data"
+  },
+  {
+    "path": "references/utils_consensus_blocklist.txt",
+    "url": "https://raw.githubusercontent.com/broadinstitute/lincs-cell-painting/061870127481dcd73c29df85ebcfddeac2ed0828/utils/consensus_blocklist.txt",
+    "source_commit": "061870127481dcd73c29df85ebcfddeac2ed0828",
+    "bytes": 2752,
+    "sha256": "1fcbdbc668ab831a8366453e395fc3e64287a869c94af7dbb927410e38461516",
+    "license": "CC0-1.0 for source data"
+  }
+]

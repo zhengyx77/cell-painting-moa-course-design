@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "source_commit": "061870127481dcd73c29df85ebcfddeac2ed0828",
+  "classes": ["EGFR inhibitor", "HDAC inhibitor", "MEK inhibitor", "topoisomerase inhibitor", "tubulin polymerization inhibitor"],
+  "dose_recodes": [4, 5, 6],
+  "test_fraction": 0.25,
+  "cv_folds": 4,
+  "feature_selection_k": 100,
+  "permutation_repeats": 30,
+  "bootstrap_repeats": 2000,
+  "selection_metric": "compound_macro_f1",
+  "candidates": ["LR_C0.1", "LR_C1", "SVM_C1", "SVM_C10", "RF_leaf1", "RF_leaf3", "Dummy"]
+}
