@@ -8,10 +8,11 @@ import argparse, joblib, pandas as pd, numpy as np
 def predict_frame(data):
     bundle=joblib.load(ROOT/'models/selected_model.joblib')
     names=bundle['features'];missing=set(names)-set(data.columns)
-    if missing: raise ValueError(f'Missing {len(missing)} required feature columns. Example: {sorted(missing)[:3]}')
-    if len(data)==0 or len(data)>5000: raise ValueError('CSV must contain 1 to 5000 rows')
-    X=data[names].apply(pd.to_numeric,errors='raise').replace([np.inf,-np.inf],np.nan)
-    if X.isna().mean().mean()>0.2: raise ValueError('Too many missing values (>20%); check input format')
+    if missing: raise ValueError(f'缺少 {len(missing)} 个必需的形态特征列。请使用兼容的特征表或运行内置示例。缺失列示例：{sorted(missing)[:3]}')
+    if len(data)==0 or len(data)>5000: raise ValueError('CSV 需要包含 1 至 5000 行样本。')
+    try:X=data[names].apply(pd.to_numeric,errors='raise').replace([np.inf,-np.inf],np.nan)
+    except (ValueError,TypeError) as e:raise ValueError('形态特征列包含非数值内容，请检查 CSV 格式。') from e
+    if X.isna().mean().mean()>0.2: raise ValueError('缺失或无效的特征值超过 20%，请检查输入文件。')
     p=bundle['model'].predict_proba(X)
     out=pd.DataFrame(p,columns=bundle['model'].classes_)
     out.insert(0,'sample_id',data['sample_id'].astype(str).to_numpy() if 'sample_id' in data else [str(i+1) for i in range(len(data))])

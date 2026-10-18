@@ -9,6 +9,13 @@ from predict import predict_frame
 import pandas as pd
 
 class Handler(SimpleHTTPRequestHandler):
+    def do_GET(self):
+        if self.path=='/api/health':
+            ready=(ROOT/'models/selected_model.joblib').exists()
+            b=json.dumps({'status':'ready' if ready else 'missing_model','model':'RF_leaf1','local_only':True}).encode()
+            self.send_response(200 if ready else 503);self.send_header('Content-Type','application/json');self.send_header('Content-Length',str(len(b)));self.end_headers();self.wfile.write(b)
+            return
+        super().do_GET()
     def do_POST(self):
         if self.path!='/api/predict': self.send_error(404);return
         try:
